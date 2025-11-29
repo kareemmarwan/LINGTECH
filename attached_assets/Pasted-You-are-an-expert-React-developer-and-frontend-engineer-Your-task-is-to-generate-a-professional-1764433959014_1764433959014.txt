@@ -1,0 +1,85 @@
+You are an expert React developer and frontend engineer. 
+Your task is to generate a **professional, fully responsive educational platform** for students of all ages to learn **English, computer skills, and programming**. 
+The platform will **not host lessons directly**, lessons are conducted via **Zoom**. 
+The frontend must be built using **React, Tailwind CSS, Redux Toolkit**, and React Router, with clean and organized code structure. 
+
+### Requirements:
+
+1. **Homepage (Home)**
+   - Display **available courses** with:
+     - Course name
+     - Short description
+     - Zoom lesson schedule
+     - Register button
+   - Section for **Success Stories** with images and short testimonials.
+   - Section **About the Platform** including goals, mission, and advantages.
+   - Section **Our Team** with each instructor’s:
+     - Photo
+     - Name
+     - Short bio
+   - Modern, **professional, clean UI** with soft and calm colors.
+   - Fully responsive design (mobile, tablet, desktop).
+   - Support **English (main)** and **Arabic (optional)**.
+
+2. **Authentication**
+   - Registration form for students:
+     - Name, email, phone, password
+   - Login form for existing students
+
+3. **Courses Page**
+   - List all courses with:
+     - Title
+     - Short description
+     - Zoom schedule
+     - Register button
+
+4. **Contact Page**
+   - Contact via:
+     - **WhatsApp**
+     - **Email**
+   - Quick contact form to send messages
+
+5. **Languages**
+   - Multi-language support (English & Arabic)
+   - Toggle language option in UI
+
+6. **State Management**
+   - Use **Redux Toolkit** to manage:
+     - Authentication state
+     - Course data
+     - Team data
+     - Success stories
+
+7. **Routing**
+   - Use **React Router** for navigation between pages:
+     - Home
+     - Courses
+     - About
+     - Contact
+     - Authentication (Login/Register)
+
+8. **Design & UI**
+   - Use **Tailwind CSS** for styling
+   - Professional and calm color scheme
+   - Clean component-based structure
+   - Reusable components for buttons, cards, headers, footers
+
+9. **Code Quality**
+   - Functional components + React hooks
+   - Clean, organized, and scalable project structure
+   - Proper folder structure: 
+     - /components, /pages, /redux, /assets, /utils
+
+10. **Bonus**
+    - Responsive navigation bar
+    - Footer with contact info and social links
+    - SEO-friendly page titles and meta descriptions
+
+### Output
+- Generate the **full React project code** with all pages and components.
+- Include **sample data** for courses, instructors, and success stories.
+- Include **English text** (Arabic optional).
+- Ensure **buttons, forms, and links** are functional with placeholders for backend integration.
+- Make sure **code is clean, organized, and production-ready**.
+
+Generate the project **exactly as described above** with all required functionality and design.
