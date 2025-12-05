@@ -22,7 +22,7 @@ function Router() {
       <Route path="/courses" component={Courses} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      <Route path="/auth" component={Auth} />
+      {/* <Route path="/auth" component={Auth} /> */}
       <Route component={NotFound} />
     </Switch>
   );
@@ -31,12 +31,12 @@ function Router() {
 function App() {
   return (
     <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </QueryClientProvider>
+      {/* <QueryClientProvider client={queryClient}> */}
+      <TooltipProvider>
+        <Toaster />
+        <Router />
+      </TooltipProvider>
+      {/* </QueryClientProvider> */}
     </Provider>
   );
 }
