@@ -8,32 +8,32 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
   /* Soft Educational Palette */
   /* Primary: Calming Blue */
   --color-primary: hsl(215 85% 45%);
   --color-primary-foreground: hsl(0 0% 100%);
-  
+
   /* Secondary: Warm Sand/Paper */
   --color-secondary: hsl(35 30% 92%);
   --color-secondary-foreground: hsl(215 50% 20%);
-  
+
   /* Accent: Growth Green or Soft Orange */
   --color-accent: hsl(150 40% 96%);
   --color-accent-foreground: hsl(160 60% 30%);
 
   --color-background: hsl(0 0% 99%);
   --color-foreground: hsl(215 30% 25%);
-  
+
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(215 30% 25%);
-  
+
   --color-popover: hsl(0 0% 100%);
   --color-popover-foreground: hsl(215 30% 25%);
-  
+
   --color-muted: hsl(210 20% 96%);
   --color-muted-foreground: hsl(215 20% 45%);
-  
+
   --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 98%);
 
@@ -43,7 +43,7 @@
 
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Libre Baskerville', serif;
-  
+
   --radius: 0.75rem;
 }
 
@@ -51,10 +51,20 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply font-sans antialiased bg-background text-foreground selection:bg-primary/10;
+    font-family: 'Cairo', sans-serif;
+
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight text-slate-900;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight text-slate-900;
+    font-family: 'Cairo', sans-serif;
   }
 }

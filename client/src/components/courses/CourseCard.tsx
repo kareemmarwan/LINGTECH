@@ -19,10 +19,9 @@ export function CourseCard({ course }: CourseCardProps) {
       transition={{ duration: 0.2 }}
     >
       <Card className="h-full flex flex-col overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
-        <div className={`h-2 w-full ${
-          course.category === 'Programming' ? 'bg-blue-500' : 
+        <div className={`h-2 w-full ${course.category === 'Programming' ? 'bg-blue-500' :
           course.category === 'Language' ? 'bg-emerald-500' : 'bg-orange-500'
-        }`} />
+          }`} />
         <CardHeader>
           <div className="flex justify-between items-start mb-2">
             <Badge variant="secondary" className="font-medium">
@@ -36,7 +35,7 @@ export function CourseCard({ course }: CourseCardProps) {
           <p className="text-muted-foreground text-sm leading-relaxed">
             {course.description}
           </p>
-          
+
           <div className="space-y-2 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Video className="h-4 w-4 text-primary/70" />

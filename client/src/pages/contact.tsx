@@ -17,25 +17,32 @@ export default function Contact() {
   const onSubmit = (data: any) => {
     console.log(data);
     toast({
-      title: "Message Sent!",
-      description: "We'll get back to you as soon as possible.",
+      title: "تم إرسال الرسالة بنجاح ✅",
+      description: "سنقوم بالرد عليك في أقرب وقت ممكن.",
     });
     reset();
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+    <div
+      className="min-h-screen flex flex-col bg-background"
+      dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
+    >
       <Navbar />
-      
+
       <main className="flex-grow py-16 bg-muted/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4 text-primary">{t('contact.title')}</h1>
-            <p className="text-muted-foreground">We'd love to hear from you. Send us a message or reach out via WhatsApp/Email.</p>
+            <h1 className="text-4xl font-bold mb-4 text-primary">
+              {t('contact.title')}
+            </h1>
+            <p className="text-muted-foreground">
+              يسعدنا تواصلك معنا، يمكنك إرسال رسالة أو التواصل عبر واتساب أو البريد الإلكتروني.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Contact Info */}
+            {/* معلومات التواصل */}
             <div className="md:col-span-1 space-y-6">
               <Card className="border-none shadow-md h-full">
                 <CardContent className="p-8 space-y-8">
@@ -44,7 +51,7 @@ export default function Contact() {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold mb-1">Email Us</h3>
+                      <h3 className="font-bold mb-1">راسلنا عبر البريد</h3>
                       <p className="text-sm text-muted-foreground">info@eduplatform.com</p>
                       <p className="text-sm text-muted-foreground">support@eduplatform.com</p>
                     </div>
@@ -55,9 +62,11 @@ export default function Contact() {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold mb-1">WhatsApp / Phone</h3>
+                      <h3 className="font-bold mb-1">واتساب / هاتف</h3>
                       <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-sm text-muted-foreground text-green-600 font-medium">Available 9am - 5pm</p>
+                      <p className="text-sm text-green-600 font-medium">
+                        متاح من 9 صباحًا حتى 5 مساءً
+                      </p>
                     </div>
                   </div>
 
@@ -66,10 +75,10 @@ export default function Contact() {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold mb-1">Location</h3>
+                      <h3 className="font-bold mb-1">الموقع</h3>
                       <p className="text-sm text-muted-foreground">
-                        Remote Platform<br/>
-                        Serving Students Worldwide
+                        منصة تعليمية عن بُعد <br />
+                        نخدم الطلاب في جميع أنحاء العالم
                       </p>
                     </div>
                   </div>
@@ -77,35 +86,50 @@ export default function Contact() {
               </Card>
             </div>
 
-            {/* Form */}
+            {/* نموذج التواصل */}
             <div className="md:col-span-2">
               <Card className="border-none shadow-md">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Send a Message</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-primary">
+                    أرسل رسالة
+                  </h3>
+
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Name</label>
-                        <Input {...register("name")} placeholder="Your Name" />
+                        <label className="text-sm font-medium">الاسم</label>
+                        <Input {...register("name")} placeholder="أدخل اسمك الكامل" />
                       </div>
+
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Email</label>
-                        <Input {...register("email")} type="email" placeholder="your@email.com" />
+                        <label className="text-sm font-medium">البريد الإلكتروني</label>
+                        <Input
+                          {...register("email")}
+                          type="email"
+                          placeholder="example@email.com"
+                        />
                       </div>
                     </div>
-                    
+
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Subject</label>
-                      <Input {...register("subject")} placeholder="How can we help?" />
+                      <label className="text-sm font-medium">عنوان الرسالة</label>
+                      <Input
+                        {...register("subject")}
+                        placeholder="بماذا يمكننا مساعدتك؟"
+                      />
                     </div>
-                    
+
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Message</label>
-                      <Textarea {...register("message")} placeholder="Type your message here..." className="min-h-[150px]" />
+                      <label className="text-sm font-medium">نص الرسالة</label>
+                      <Textarea
+                        {...register("message")}
+                        placeholder="اكتب رسالتك هنا..."
+                        className="min-h-[150px]"
+                      />
                     </div>
-                    
+
                     <Button type="submit" size="lg" className="w-full md:w-auto">
-                      <Send className="mr-2 h-4 w-4" />
+                      <Send className="ml-2 h-4 w-4" />
                       {t('contact.send')}
                     </Button>
                   </form>
@@ -115,7 +139,7 @@ export default function Contact() {
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

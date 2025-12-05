@@ -15,26 +15,27 @@ const initialState: { stories: SuccessStory[] } = {
   stories: [
     {
       id: '1',
-      name: 'Maria Rodriguez',
-      course: 'English for Beginners',
-      quote: "I couldn't speak a word of English before. Now I can communicate confidently in my travels!",
+      name: 'ماريا رودريغيز',
+      course: 'اللغة الإنجليزية للمبتدئين',
+      quote: "لم أكن أستطيع التحدث بكلمة واحدة بالإنجليزية من قبل، الآن أستطيع التواصل بثقة أثناء سفراتي!",
       image: student1
     },
     {
       id: '2',
-      name: 'Ahmed Al-Sayed',
-      course: 'Python Masterclass',
-      quote: "This course changed my career. I landed my first junior developer job just 3 months after finishing.",
+      name: 'أحمد السيد',
+      course: 'دورة بايثون الشاملة',
+      quote: "هذه الدورة غيرت مساري المهني، حصلت على أول وظيفة لي كمطور مبتدئ بعد 3 أشهر فقط من إنهائها.",
       image: student2
     },
     {
       id: '3',
-      name: 'Emily Blunt',
-      course: 'Business English',
-      quote: "The flexibility of Zoom lessons allowed me to learn while working full-time. Highly recommended!",
+      name: 'إيميلي بلانت',
+      course: 'اللغة الإنجليزية للأعمال',
+      quote: "مرونة الدروس عبر زوم سمحت لي بالتعلم أثناء عملي بدوام كامل. أنصح بها بشدة!",
       image: student3
     }
   ]
+
 };
 
 export const storiesSlice = createSlice({

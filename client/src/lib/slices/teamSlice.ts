@@ -16,33 +16,49 @@ const initialState: { members: TeamMember[] } = {
   members: [
     {
       id: '1',
-      name: 'Sarah Johnson',
-      role: 'Head of English Department',
-      bio: 'Certified TEFL instructor with 10 years of experience in teaching ESL to students worldwide.',
+      name: 'سارة جونسون',
+      role: 'رئيسة قسم اللغة الإنجليزية',
+      bio: 'مدرّسة معتمدة في تدريس اللغة الإنجليزية (TEFL) بخبرة 10 سنوات في تعليم الطلاب من مختلف أنحاء العالم.',
       image: teacher1
     },
     {
       id: '2',
-      name: 'David Chen',
-      role: 'Senior Programming Instructor',
-      bio: 'Ex-Google engineer passionate about teaching Python and Web Development to the next generation.',
+      name: 'ديفيد تشين',
+      role: 'مدرب برمجة أول',
+      bio: 'مهندس سابق في جوجل، شغوف بتعليم بايثون وتطوير الويب للجيل القادم.',
       image: teacher2
     },
     {
       id: '3',
-      name: 'Amira Hassan',
-      role: 'Computer Skills Trainer',
-      bio: 'Specialist in digital literacy and ICDL certification with a focus on practical workplace skills.',
+      name: 'أميرة حسن',
+      role: 'مدرّبة مهارات الحاسوب',
+      bio: 'متخصصة في الثقافة الرقمية وشهادة ICDL مع التركيز على المهارات العملية لسوق العمل.',
       image: teacher3
     },
     {
       id: '4',
-      name: 'James Wilson',
-      role: 'Business Communication Coach',
-      bio: 'Helps professionals master the art of negotiation and corporate communication.',
+      name: 'جيمس ويلسون',
+      role: 'مدرب التواصل في مجال الأعمال',
+      bio: 'يساعد المهنيين على إتقان فن التفاوض والتواصل المؤسسي.',
+      image: teacher4
+    },
+    {
+      id: '5',
+      name: 'جيمس ويلسون',
+      role: 'مدرب التواصل في مجال الأعمال',
+      bio: 'يساعد المهنيين على إتقان فن التفاوض والتواصل المؤسسي.',
+      image: teacher4
+    },
+
+    {
+      id: '6',
+      name: 'جيمس ويلسون',
+      role: 'مدرب التواصل في مجال الأعمال',
+      bio: 'يساعد المهنيين على إتقان فن التفاوض والتواصل المؤسسي.',
       image: teacher4
     }
   ]
+
 };
 
 export const teamSlice = createSlice({

@@ -27,34 +27,46 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
-          <div className="flex items-center gap-2 cursor-pointer">
-            <div className="bg-primary text-white p-1.5 rounded-lg">
-              <GraduationCap className="h-6 w-6" />
+        <div className='flex items-center gap-11 cursor-pointer'>
+          <Link href="/">
+            <div className="flex items-center gap-2 cursor-pointer">
+              <div className="bg-primary text-white p-1.5 rounded-lg">
+                <GraduationCap className="h-6 w-6" />
+              </div>
+              <span className="font-serif font-bold text-xl tracking-tight text-primary">
+                LINGTECH
+              </span>
             </div>
-            <span className="font-serif font-bold text-xl tracking-tight text-primary">
-              EduPlatform
-            </span>
-          </div>
-        </Link>
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <div className="flex items-center gap-6">
+          </Link>
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <span className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
-                  location === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
-                }`}>
+                <span className={`text-md font-medium transition-colors hover:text-primary cursor-pointer ${location === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
+                  }`}>
                   {link.label}
                 </span>
               </Link>
             ))}
           </div>
+        </div>
+
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8 ">
+          {/* <div className="flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <span className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${location === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
+                  }`}>
+                  {link.label}
+                </span>
+              </Link>
+            ))}
+          </div> */}
 
           <div className="flex items-center gap-4 pl-4 border-l">
             <LanguageToggle />
-            
+
             {isAuthenticated ? (
               <div className="flex items-center gap-4">
                 <span className="text-sm font-medium text-muted-foreground">
@@ -98,7 +110,7 @@ export function Navbar() {
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
-                  <span 
+                  <span
                     className="block py-2 text-base font-medium text-muted-foreground hover:text-primary"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

@@ -42,8 +42,9 @@ const resources = {
       "nav.login": "دخول",
       "nav.register": "تسجيل",
       "nav.logout": "خروج",
-      "hero.title": "أطلق العنان لإمكانياتك",
-      "hero.subtitle": "أتقن اللغة الإنجليزية، البرمجة، ومهارات الحاسوب من منزلك عبر زووم.",
+      "hero.title": "ابدأ رحلتك التعليمية !",
+      "hero.subtitle": "تعلم اللغة الإنجليزية ومهارات الحاسوب مع أفضل المدرسين، من أي مكان وفي أي وقت.\nمنصة تعليمية مبتكرة لجميع الأعمار، حيث يمكنك تطوير مهاراتك والحصول على شهادات مع متابعة تقدمك بسهولة.",
+
       "hero.cta": "تصفح الدورات",
       "section.success_stories": "قصص نجاح",
       "section.our_team": "فريق المدربين",
@@ -70,9 +71,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en", 
+    lng: "ar",
     interpolation: {
-      escapeValue: false 
+      escapeValue: false
     }
   });
 

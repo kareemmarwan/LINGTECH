@@ -11,10 +11,13 @@ export function LanguageToggle() {
     document.dir = newLang === 'ar' ? 'rtl' : 'ltr';
   };
 
+
+
+
   return (
-    <Button 
-      variant="ghost" 
-      size="icon" 
+    <Button
+      variant="ghost"
+      size="icon"
       onClick={toggleLanguage}
       className="rounded-full hover:bg-primary/10"
       title={i18n.language === 'en' ? 'Switch to Arabic' : 'Switch to English'}
