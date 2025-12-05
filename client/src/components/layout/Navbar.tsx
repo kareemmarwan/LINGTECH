@@ -13,7 +13,7 @@ export function Navbar() {
   const { t } = useTranslation();
   const [location] = useLocation();
   const dispatch = useDispatch();
-  const { isAuthenticated, user } = useSelector((state: RootState) => state.auth);
+  // const { isAuthenticated, user } = useSelector((state: RootState) => state.auth);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -119,7 +119,7 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 border-t flex flex-col gap-2">
-                {isAuthenticated ? (
+                {/* {isAuthenticated ? (
                   <Button onClick={() => { dispatch(logout()); setIsMobileMenuOpen(false); }}>
                     {t('nav.logout')}
                   </Button>
@@ -136,7 +136,7 @@ export function Navbar() {
                       </Button>
                     </Link>
                   </>
-                )}
+                )} */}
               </div>
             </div>
           </motion.div>
