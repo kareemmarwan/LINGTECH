@@ -64,7 +64,7 @@ export function Navbar() {
             ))}
           </div> */}
 
-          <div className="flex items-center gap-4 pl-4 border-l">
+          {/* <div className="flex items-center gap-4 pl-4 border-l">
             <LanguageToggle />
 
             {isAuthenticated ? (
@@ -86,12 +86,12 @@ export function Navbar() {
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-2">
-          <LanguageToggle />
+          {/* <LanguageToggle /> */}
           <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
