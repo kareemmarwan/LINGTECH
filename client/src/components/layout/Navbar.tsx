@@ -30,12 +30,21 @@ export function Navbar() {
         <div className='flex items-center gap-11 cursor-pointer'>
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <div className="bg-primary text-white p-1.5 rounded-lg">
-                <GraduationCap className="h-6 w-6" />
+
+              <div className=" p-1.5 rounded-lg flex items-center justify-center">
+                <img
+                  src="/favicon.png"
+                  alt="Lingtech Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
+
               <span className="font-serif font-bold text-xl tracking-tight text-primary">
                 LINGTECH
               </span>
+
             </div>
           </Link>
           <div className="hidden md:flex items-center gap-6">

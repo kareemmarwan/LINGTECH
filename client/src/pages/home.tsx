@@ -193,7 +193,7 @@ export default function Home() {
 
 
         {/* Success Stories */}
-        <section className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
+        {/* <section className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">{t('section.success_stories')}</h2>
@@ -204,7 +204,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Team Section */}
         {/* <section className="py-20 bg-white">
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
         </section> */}
         {/* Team Section as Slider */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">{t('section.our_team')}</h2>
@@ -250,9 +250,9 @@ export default function Home() {
 
 
           </div>
-        </section>
+        </section> */}
 
-
+        {/* 
         {showWhatsApp && (
           <div className="fixed bottom-6 left-6 md:left-auto md:right-6 z-50 animate-fade-in">
             <a
@@ -261,7 +261,26 @@ export default function Home() {
               rel="noopener noreferrer"
               className="w-13 h-13 bg-green-500 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all duration-300 scale-105 hover:scale-110 animate-pulse p-1"
             >
-              <img src="pngegg.png" alt="WhatsApp" />
+              <img src="pngegg.png" alt="WhatsApp" loading="lazy" />
+            </a>
+          </div>
+        )} */}
+        {showWhatsApp && (
+          <div className="fixed bottom-6 left-6 md:left-auto md:right-6 z-50 animate-fade-in">
+            <a
+              href="https://wa.me/970567747121"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-13 h-13 bg-green-500 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all duration-300 scale-105 hover:scale-110 animate-pulse p-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                className="w-8 h-8"
+              >
+                <path d="M20.52 3.48A11.78 11.78 0 0 0 12 0C5.37 0 0 5.37 0 12a11.9 11.9 0 0 0 1.62 6L0 24l6.25-1.64A11.89 11.89 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.21-3.48-8.52ZM12 21.56a9.64 9.64 0 0 1-5.06-1.44l-.36-.21-3.72.95.99-3.63-.24-.38A9.63 9.63 0 0 1 2.44 12c0-5.27 4.29-9.56 9.56-9.56 2.56 0 4.97 1 6.78 2.8a9.52 9.52 0 0 1 2.8 6.76c0 5.27-4.29 9.56-9.56 9.56Zm5.27-7.2c-.29-.15-1.72-.85-1.99-.94-.27-.1-.47-.15-.67.15-.2.29-.77.94-.94 1.13-.17.2-.35.22-.64.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.57-.49-.49-.67-.49h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.49 0 1.47 1.06 2.89 1.21 3.09.15.2 2.09 3.2 5.07 4.48.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.72-.7 1.97-1.38.24-.67.24-1.24.17-1.38-.07-.15-.26-.22-.55-.37Z" />
+              </svg>
             </a>
           </div>
         )}

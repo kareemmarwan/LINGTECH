@@ -31,11 +31,10 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                info@eduplatform.com
-              </li>
+                lingtechacademy@gmail.com              </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                +1 (555) 123-4567
+                970567747110+
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
@@ -47,13 +46,13 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">تابعنا على</h4>
             <div className="flex gap-4">
-              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61585377866788" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
+              {/* <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/lingtechacademy2025/" className="bg-white p-2 rounded-full shadow-sm hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>

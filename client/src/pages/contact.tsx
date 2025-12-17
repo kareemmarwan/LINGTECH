@@ -50,24 +50,61 @@ export default function Contact() {
                     <div className="bg-primary/10 p-3 rounded-lg">
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
-                    <div>
+                    {/* <div>
                       <h3 className="font-bold mb-1">راسلنا عبر البريد</h3>
                       <p className="text-sm text-muted-foreground">info@eduplatform.com</p>
                       <p className="text-sm text-muted-foreground">support@eduplatform.com</p>
-                    </div>
+                    </div> */}
+                    <a
+                      href="mailto:info@eduplatform.com"
+                      className="block hover:opacity-80 transition-opacity"
+                    >
+                      <div>
+                        <h3 className="font-bold mb-1">راسلنا عبر البريد</h3>
+
+                        <p className="text-sm text-muted-foreground">
+                          info@eduplatform.com
+                        </p>
+
+                        <p className="text-sm text-muted-foreground">
+                          support@eduplatform.com
+                        </p>
+                      </div>
+                    </a>
+
                   </div>
 
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
-                    <div>
+                    {/* <div>
                       <h3 className="font-bold mb-1">واتساب / هاتف</h3>
                       <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
                       <p className="text-sm text-green-600 font-medium">
                         متاح من 9 صباحًا حتى 5 مساءً
                       </p>
-                    </div>
+                    </div> */}
+
+                    <a
+                      href="https://wa.me/970567747110"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:opacity-80 transition-opacity"
+                    >
+                      <div>
+                        <h3 className="font-bold mb-1">واتساب / هاتف</h3>
+
+                        <p className="text-sm text-muted-foreground">
+                          970567747110+
+                        </p>
+
+                        <p className="text-sm text-green-600 font-medium">
+                          متاح من 9 صباحًا حتى 5 مساءً
+                        </p>
+                      </div>
+                    </a>
+
                   </div>
 
                   <div className="flex items-start gap-4">
@@ -85,9 +122,15 @@ export default function Contact() {
                 </CardContent>
               </Card>
             </div>
+            <div className="md:col-span-2">
+              <img
+                src="/imag.webp"
+                alt="تواصل معنا"
+                className="contact-image"
+              />            </div>
 
             {/* نموذج التواصل */}
-            <div className="md:col-span-2">
+            {/* <div className="md:col-span-2">
               <Card className="border-none shadow-md">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6 text-primary">
@@ -135,7 +178,7 @@ export default function Contact() {
                   </form>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
