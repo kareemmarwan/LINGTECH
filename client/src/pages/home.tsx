@@ -268,7 +268,7 @@ export default function Home() {
         {showWhatsApp && (
           <div className="fixed bottom-6 left-6 md:left-auto md:right-6 z-50 animate-fade-in">
             <a
-              href="https://wa.me/970567747121"
+              href="https://wa.me/970567747110"
               target="_blank"
               rel="noopener noreferrer"
               className="w-13 h-13 bg-green-500 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all duration-300 scale-105 hover:scale-110 animate-pulse p-1"
