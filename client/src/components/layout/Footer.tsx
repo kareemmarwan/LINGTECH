@@ -12,7 +12,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold font-serif text-primary">LINGTECH</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              نعمل على تمكين الطلاب حول العالم من خلال تقديم تعليم عالي الجودة في اللغة الإنجليزية، البرمجة، ومهارات الحاسوب.
+              نعمل على تمكين الطلاب حول العالم من خلال تقديم تعليم عالي الجودة في  الإنجليزية ومهارات الحاسوب.
             </p>
           </div>
 
